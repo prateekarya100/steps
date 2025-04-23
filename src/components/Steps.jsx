@@ -35,7 +35,7 @@ const Steps = () => {
             <button
               style={{ background: "#7950f2", color: "white" }}
               onClick={() => {
-                if (steps >= 2) setSteps(steps - 1);
+                if (steps >= 2) setSteps((step) => step - 1);
               }}
             >
               Previous
@@ -43,7 +43,7 @@ const Steps = () => {
             <button
               style={{ background: "#7950f2", color: "white" }}
               onClick={() => {
-                if (steps <= 2) setSteps(steps + 1);
+                if (steps <= 2) setSteps((step) => step + 1);
               }}
             >
               Next
